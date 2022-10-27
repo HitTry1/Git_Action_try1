@@ -1,5 +1,5 @@
 name : testing_workflow1
-on: #[push]
+on: [push]
  # label:
   #  types:
    #   - created
@@ -7,13 +7,7 @@ on: #[push]
   #  branches:
    #   - master
 
-  workflow_call:
-    inputs:
-      username:
-        description: 'A username passed from the caller workflow'
-        default: 'jas'
-        required: false
-        type: string
+ 
 
 jobs:
   print-username:
@@ -21,4 +15,4 @@ jobs:
 
     steps:
       - name: Print the input name to STDOUT
-        run: echo The username is ${{ inputs.username }}
+        run: echo The username is jas
