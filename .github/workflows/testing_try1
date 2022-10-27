@@ -1,5 +1,5 @@
 name : testing_workflow1
-on: [push]
+on: #[push]
  # label:
   #  types:
    #   - created
