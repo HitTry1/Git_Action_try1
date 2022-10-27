@@ -1,23 +1,23 @@
 name : testing_workflow1
-on:
+on: [push]
  # label:
   #  types:
    #   - created
-  push:
-    branches:
-      - master
+  # push:
+  #  branches:
+   #   - master
 
   workflow_call:
     inputs:
       username:
         description: 'A username passed from the caller workflow'
-        default: 'john-doe'
+        default: 'jas'
         required: false
         type: string
 
 jobs:
   print-username:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: Print the input name to STDOUT
