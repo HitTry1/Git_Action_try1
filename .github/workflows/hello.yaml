@@ -1,0 +1,10 @@
+name : print_hello
+on    : [push]
+jobs :
+  print run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      name: python command
+      run : |
+        print("Hello world")
+      shell : python 
