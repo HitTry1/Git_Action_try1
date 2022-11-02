@@ -11,7 +11,7 @@ jobs :
 
   runs-on windows-latest:
     runs-on : windows-latest
-    needs: [print run-shell-command]
+    needs: [testing_try1.yaml]
     steps : 
       name : python command
       shell : python
