@@ -16,12 +16,12 @@ list = obj['basic']
 #except KeyError :
  #   print("key not found")
 
-for i in range(len(list)):
-    print("job_name :",list['job_name'])
-    print("job_desc  :",list['job_desc'])
-    print("tgt_data_obj :",list['tgt_data_obj'])
-    print("threshold_c : ",list['threshold_c'])
-    print("threshold_ce : ",list['threshold_ce'])
+
+print("job_name :",list['job_name'])
+print("job_desc  :",list['job_desc'])
+print("tgt_data_obj :",list['tgt_data_obj'])
+print("threshold_c : ",list['threshold_c'])
+print("threshold_ce : ",list['threshold_ce'])
 
 
 
