@@ -5,16 +5,24 @@ json_data = json_file.read()
 
 obj = json.loads(json_data)
 
+#print(str(obj['basic']))
 list = obj['basic']
-print(list)
-print(len(list))
+
+#print(list)
+#print(len(list))
+#try :
+  #  print(list['job_name'])
+   # print(list[0].get('job_name'))
+#except KeyError :
+ #   print("key not found")
 
 for i in range(len(list)):
-    print("job_name",list[i].get("job_name"))
-    print("job_desc",list[i].get("job_desc"))
-    print("tgt_data_obj",list[i].get("tgt_data_obj"))
-    print("threshold_c",list[i].get("threshold_c"))
-    print("threshold_ce",list[i].get("threshold_ce"))
+    print("job_name :",list['job_name'])
+    print("job_desc  :",list['job_desc'])
+    print("tgt_data_obj :",list['tgt_data_obj'])
+    print("threshold_c : ",list['threshold_c'])
+    print("threshold_ce : ",list['threshold_ce'])
+
 
 
 
