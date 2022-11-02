@@ -9,7 +9,7 @@ list = obj['basic']
 print(list)
 print(len(list))
 
-for i int range(len(list)):
+for i in range(len(list)):
     print("job_name",list[i].get("job_name"))
     print("job_desc",list[i].get("job_desc"))
     print("tgt_data_obj",list[i].get("tgt_data_obj"))
