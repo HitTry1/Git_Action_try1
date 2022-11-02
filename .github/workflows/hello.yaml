@@ -8,3 +8,11 @@ jobs :
       run : |
         print("Hello world")
       shell : python 
+
+      name : python command
+      shell : python
+      run : |
+        import uuid
+        myuuid = uuid.uuid4()
+        print('Your UUID is: ' + str(myuuid))
+      
