@@ -9,6 +9,10 @@ jobs :
         print("Hello world")
       shell : python 
 
+  runs-on windows-latest:
+    runs-on : windows-latest
+    needs: [print run-shell-command]
+    steps : 
       name : python command
       shell : python
       run : |
